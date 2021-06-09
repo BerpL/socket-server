@@ -3,7 +3,7 @@ import Server from './classes/server';
 import router from './routes/router';
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;
 
 /* Body Parser */
 server.app.use( express.urlencoded({ extended: true }));
